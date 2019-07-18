@@ -1,0 +1,13 @@
+#navbar {
+    background-color: orangered;
+}
+
+#navtitle {
+    color: white;
+    font-size: 20pt;
+    padding-right: 20pt
+}
+
+#navtext {
+    color: white;
+}
