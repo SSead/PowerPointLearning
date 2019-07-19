@@ -97,7 +97,7 @@ const data = [
     },
 ]
 
-const sections = ["Intro", "Main"]
+const sections = ["Intro", "Data", "Media"]
 
 randBetween = (begin, end) => {
     return Math.round(Math.random() * (end - begin)) + begin
@@ -119,10 +119,10 @@ rGenerate = (d) => {
         }
 
         if (d[num].tag.tag === "section") {
-            text += " - " + d[num].tag.text + " " + sections[randBetween(0, 1)]
+            text += " - " + d[num].tag.text + " " + sections[randBetween(0, 2)]
         }
     }
-    console.log
+    
     if (d[num].data != null) return text + " - " + rGenerate(d[num].data)
     else return text
 }
