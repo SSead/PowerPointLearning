@@ -34,10 +34,12 @@
 
 #sublist {
     margin-left: 50pt;
+    
 }
 
 #subitem {
     text-decoration: none;
     color: black;
     font-size: 14pt;
+    cursor: pointer;
 }
