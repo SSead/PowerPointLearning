@@ -5,7 +5,7 @@ const data = [
         data: [
             {
                 q: "Screen tip",
-                again: [1,2,3,4],
+                again: [1,2,3,5],
 
                 data: [
                     {q: "Djes"},
@@ -16,7 +16,7 @@ const data = [
             },
 
             {
-                q: "Web page",
+                q: "Web Page",
 
                 data: [
                     {q: "www.youtube.com"},
@@ -25,12 +25,160 @@ const data = [
                     {q: "www.linkedin.com"}
                 ]
             },
-
             {
                 q: "To File",
 
                 data: [
-                    {q: ""}
+                    {q: "outline.docx"},
+                    {q: "ppt2.pptx"}
+                ]
+            },
+
+            {
+                q: "Create Documnet",
+                again: [4],
+
+                data: [
+                    {q: "text.txt"},
+                    {q: "myFile.pptx"}
+                ]
+            },
+
+            {
+                q: "Edit",
+
+                data: [
+                    {q: "Edit Now"},
+                    {q: "Edit Later"}
+                ]
+            },
+
+            {
+                q: "Place in This Document",
+
+                data: [
+                    {q: "First Slide"},
+                    {q: "Last Slide"},
+                    {q: "Next Slide"},
+                    {q: "Previous Slide"},
+
+                    {
+                        q: "Slide",
+
+                        data: [
+                            {q: "1. Ac tortor dignissim"},
+                            {q: "2. Lorem Ipsum"},
+                            {q: "3. Business Team"},
+                            {q: "4. Facilisis leo vel fringilla"},
+                            {q: "5. Charts"},
+                            {q: "6. Table"},
+                            {q: "7. Video"}
+                        ]
+                    },
+
+                    {q: "Custom Shows - CustomShow"}
+                ]
+            }
+
+        ]
+    },
+
+    {
+        q: "Insert Action",
+
+        data: [
+            {
+                q: "On",
+                again: [1],
+                 
+                data: [
+                    {q: "Mouse Click"},
+                    {q: "Mouse Over"}
+                ]
+            },
+
+            {
+                q: "Hyperlink",
+                again: [2],
+
+                data: [
+                    {q: "Next Slide"},
+                    {q: "Previous Slide"},
+                    {q: "First Slide"},
+                    {q: "Last Slide"},
+                    {q: "Last Slide Viewed"},
+                    {q: "End Show"},
+
+                    {
+                        q: "Slide",
+
+                        data: [
+                            {q: "1. Ac tortor dignissim"},
+                            {q: "2. Lorem Ipsum"},
+                            {q: "3. Business Team"},
+                            {q: "4. Facilisis leo vel fringilla"},
+                            {q: "5. Charts"},
+                            {q: "6. Table"},
+                            {q: "7. Video"}
+                        ]
+                    },
+
+                    {q: "Custom Shows - CustomShow"},
+
+                    {
+                        q: "URL",
+        
+                        data: [
+                            {q: "www.youtube.com"},
+                            {q: "www.facebook.com"},
+                            {q: "www.uquest.com"},
+                            {q: "www.linkedin.com"}
+                        ]
+                    },
+
+                    {
+                        q: "Other PowerPoint Presentation - ppt2.pptx",
+
+                        data: [
+                            {q: "1. Ac tortor dignissim"},
+                            {q: "2. Lorem Ipsum"},
+                            {q: "3. Business Team"},
+                        ]
+                    },
+
+                    {
+                        q: "Ohter File",
+
+                        data: [
+                            {q: "outline.docx"}
+                        ]        
+                    }
+                ]
+            },
+
+            {
+                q: "Play Sound",
+
+                data: [
+                    {q: "Applauz"},
+                    {q: "Arrow"},
+                    {q: "Bomb"},
+                    {q: "Brezze"},
+                    {q: "Camera"},
+                    {q: "Cash Register"},
+                    {q: "Chime"},
+                    {q: "Click"},
+                    {q: "Coin"},
+                    {q: "Drum Roll"},
+                    {q: "Explotion"},
+                    {q: "Hammer"},
+                    {q: "Laser"},
+                    {q: "Push"},
+                    {q: "Suction"},
+                    {q: "Typewriter"},
+                    {q: "Voltage"},
+                    {q: "Woosh"},
+                    {q: "Wind"}
                 ]
             }
         ]
@@ -131,4 +279,4 @@ rGenerate = (d) => {
     
 }
 
-document.getElementById("next").onclick = genQeustions
+document.getElementById("next").onclick = genQeustion
