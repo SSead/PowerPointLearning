@@ -147,8 +147,8 @@ rGenerate = (d) => {
             }
 
             else if (d[num].tag.tag == "trim") {
-                var d = randBetween(0, 3)
-                text += " " + d + ":00 to " + (d + randBetween(1, 2)) + ":00"
+                var x = randBetween(0, 3)
+                text += " " + x + ":00 to " + (x + randBetween(1, 2)) + ":00"
             }
 
             else if (d[num].tag.tag === "fade") {

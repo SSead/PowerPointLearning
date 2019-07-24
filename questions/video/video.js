@@ -47,7 +47,7 @@ const data = [
 
             {q: "Play Full Screen",again: [0,1,2,3,4,5,6,7,8,9]},
             {q: "Hide While Not Playing",again: [0,1,2,3,4,5,6,7,8,9]},
-            {q: "Loop until Stipped",again: [0,1,2,3,4,5,6,7,8,9]},
+            {q: "Loop until Stpped",again: [0,1,2,3,4,5,6,7,8,9]},
             {q: "Rewind after Playing",again: [0,1,2,3,4,5,6,7,8,9]},
 
             {
@@ -905,12 +905,12 @@ randBetween = (begin, end) => {
 }
 
 genQeustion = () => {
+    console.log("//////////////////////////////////////")
     document.getElementById("question").textContent = rGenerate(data)
 }
 
 rGenerate = (d) => {
 
-    console.log(d)
     var done = []
     var num = randBetween(0, d.length - 1)
 
@@ -972,8 +972,8 @@ rGenerate = (d) => {
             }
 
             else if (d[num].tag.tag == "trim") {
-                var d = randBetween(0, 3)
-                text += " " + d + ":00 to " + (d + randBetween(1, 2)) + ":00"
+                var x = randBetween(0, 3)
+                text += " " + x + ":00 to " + (x + randBetween(1, 2)) + ":00"
             }
 
             else if (d[num].tag.tag === "fade") {
@@ -981,10 +981,11 @@ rGenerate = (d) => {
             }
         }
         
-        if (d[num].data != null) text += " - " + rGenerate(d[num].data)
         
+        if (d[num].data != null)
+            text += " - " + rGenerate(d[num].data)
+
         if (d[num].again == null) break
-        console.log(randBetween(0, d[num].again.length - 1))
         done.push(num)
 
         var n = d[num].again[randBetween(0, d[num].again.length - 1)]
